@@ -8,6 +8,12 @@ st.header('st.write')
 
 # Ejemplo 1
 
+chart_data = pd.DataFrame(
+     np.random.randn(10, 3),
+     columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
+st.write(chart_data)
 st.write('Hello, *World!* :sunglasses:')
 
 # Ejemplo 2
